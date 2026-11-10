@@ -14,6 +14,7 @@ Owner rule: every licence plate in our designs is replaced with the Fast Fleet b
 3. Run `cover_plate(src, dst, quad, 'logo_t.png')` from `tools/plate_cover.py` (also in repo majdtuffi/ffl-media/tools/plate_cover.py).
 4. Zoom the result 6x and check: no white fringe, no oversized plate, natural angle. Then use the photo in the design.
 Escalade example (cars id 176): front photo 176_2.jpg quad [(427.8,468.3),(500.6,468.0),(500.6,488.3),(427.8,488.6)]; rear photo 176_3.jpg quad [(792.0,364.8),(853.5,365.5),(853.5,383.6),(792.0,383.6)].
+Patrol example (cars id 145, white 2026 Patrol LE): front 145_0.jpg quad [(1000.8,887.0),(1139.2,886.7),(1140.0,927.0),(1000.8,927.7)]; rear 145_2.jpg quad [(736.9,730.4),(885.7,730.4),(885.7,770.7),(736.9,770.7)]. NOTE: when the real plate has a dealer frame/strip (e.g. 'ARABIAN AUTOMOBILES'), the quad must include the whole frame so no text/number remains visible.
 Logo file: transparent PNG of the site logo (wings + FAST FLEET text), 'logo_t.png'.
 
 ## Code (tools/plate_cover.py)
