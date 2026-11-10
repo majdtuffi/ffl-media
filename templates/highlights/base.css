@@ -1,0 +1,17 @@
+@font-face{font-family:"Inter";src:url("inter-latin.woff2") format("woff2");font-weight:100 900;}
+@font-face{font-family:"Noto Kufi Arabic";src:url("kufi-arabic.woff2") format("woff2");font-weight:100 900;unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFF;}
+@font-face{font-family:"Noto Kufi Arabic";src:url("kufi-latin.woff2") format("woff2");font-weight:100 900;unicode-range:U+0000-00FF;}
+:root{--bg:#0C0C0E;--card:#1D1D1F;--card2:#26262A;--gold:#C99A20;--gold-hi:#D9AB2F;--gold-soft:#F0DBAA;--text:#F5F5F7;--muted:rgba(245,245,247,.62)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg)}
+body{font-family:"Inter","Noto Kufi Arabic",system-ui,sans-serif;color:var(--text);-webkit-font-smoothing:antialiased}
+.slide{position:relative;width:1080px;overflow:hidden;background:var(--bg);direction:rtl;text-align:center}
+.frame{position:absolute;inset:44px;border:2px solid rgba(201,154,32,.55);border-radius:28px;pointer-events:none}
+.frame::after{content:"";position:absolute;inset:14px;border:1px solid rgba(201,154,32,.22);border-radius:18px}
+.glow{position:absolute;left:50%;top:38%;width:900px;height:900px;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(201,154,32,.16),rgba(201,154,32,0) 62%)}
+.logo{display:block;margin:0 auto;mix-blend-mode:lighten}
+.num{font-family:"Inter",sans-serif;direction:ltr;unicode-bidi:isolate;display:inline-block;font-feature-settings:"tnum"}
+.gold{color:var(--gold)}
+.hair{height:2px;width:120px;margin:0 auto;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.pill{display:inline-block;border:2px solid var(--gold);color:var(--gold-soft);border-radius:999px;padding:18px 44px;font-weight:600;font-size:38px}
+.btn{display:inline-block;background:var(--gold);color:#1D1D1F;border-radius:999px;padding:30px 64px;font-weight:800;font-size:46px}
